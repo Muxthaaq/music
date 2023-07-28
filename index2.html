@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <center><h1>PHONK</h1></center>
+        <nav class="nav">
+        <ul>
+            <li>
+                <a
+                href="#"title="Home">Home</a>
+            </li>
+            <li>
+                <a href="#"title="contact us">contact us</a>
+            </li>
+            <li>
+                <a href="#"
+                title="search">search</a>
+            </li>
+            <li>
+                <a href="#"
+                title="favourite">favourite</a>
+            </li>
+            </ul>
+            </nav>
+    </header>
+    <main class="text">
+        <p>INDERWORLD-METAMORPHOSIS 2</p>
+        <img src="play.jpg" alt="play" id="icon">
+    <audio id="song">
+        <source src="Sx1nxwy - show me the will.mp3"
+    type="audio/mp3"></audio>
+        </main>
+        <footer>
+            <p>copyright & copy;2023 hear it.
+                all rights reserved</p>
+        </footer>
+        <script>
+            var song=document.getelementbyid('song');
+            var icon=document.getElementById('icon');
+            icon.onclick=function(){
+
+                if(song.paused){
+                    song.play();
+                    icon.src="pause.jpg"
+                }
+                else{
+                    song.pause();
+                    icon.src="play.jpg"
+                }
+            }
+        </script>
+</body>
+</html>
